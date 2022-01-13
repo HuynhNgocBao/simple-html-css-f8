@@ -48,6 +48,9 @@ html{
     clear: both;
 }
 
+.text-center{
+    text-align: center !important;
+}
 .mt-8{
     margin-top: 8px !important;
 }
@@ -56,6 +59,9 @@ html{
     margin-top: 16px !important;
 }
 
+.mt-32{
+    margin-top: 32px !important;
+}
 .pull-right{
     float: right !important;
 }
@@ -74,7 +80,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
+    
 }
 
 #nav{
@@ -216,14 +222,11 @@ html{
     opacity: 0.6;
 }
 #content .member-name{
-
     margin: 15px 0;
 }
-#content .member-item{
-    text-align: center;
-}
+
 #content .member-list{
-    margin-top: 47px;
+    margin-top: 32px;
     overflow: hidden;
 }
 #content .member-img{
@@ -268,8 +271,8 @@ html{
 }
 
 .location-list{
-    margin-top: 32px;
     font-size: 15px;
+    margin-top: 16px;
 }
 
 .location-item{
@@ -310,6 +313,7 @@ html{
     display: inline-block;
     padding: 8px 16px;
     border: none;
+    text-align: center;
 }
 
 .btn:hover{
@@ -324,6 +328,12 @@ html{
 }
 .contact-info{
     font-size: 18px;
+}
+.contact-info a{
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
 }
 .contact-form{
     font-size: 15px;
@@ -472,16 +482,70 @@ html{
 
 /* Mobile */
 @media (max-width:740px){
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    .s-col-full,.s-full-width{
+        width: 100% !important;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #nav{
+        display:block;
+    }
     #nav > li{
         display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
     }
     #nav > li > a{
         display: block;
     }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    
     #header .search-btn{
         display: none;
     }
     #header .mobile-menu-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
         display: block;
+    }
+    #content .member-img{
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 32px;
+    }
+}
+
+/* Tablet và mobile */
+@media(max-width: 1023px){
+    .btn{
+        padding: 15px 16px;
+    }
+    .contact .form-control{
+        padding: 15px;
+    }
+    #footer .social-list a{
+        font-size: 48px;
+        margin: 0 8px;
+    }
+    #footer .copyright{
+        padding: 12px;
+        display: inline-block;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 10px 41px;
+    }
+    .contact-info{
+        line-height: 2.1;
     }
 }
