@@ -19,7 +19,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">More <i class="nav-arrow-down ti-angle-down"></i></a>
+                    <a href="#">More <i class="nav-arrow-down ti-angle-down"></i></a>
                     <ul class="subnav">
                         <li><a href="#">Merchandise</a></li>
                         <li><a href="#">Extras</a></li>
@@ -29,8 +29,10 @@
             </ul>
             <!-- End nav -->
             <div class="search-btn">
-                <i class="search-icon ti-search">
-                </i>
+                <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
         </div>
 
@@ -81,31 +83,33 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <div class="location-list">
-                        <div class="col col-3 location-item">
-                            <img src="/assets/img/location1.jpg" alt="New York" class="location-img">
-                            <div class="location-info">
-                                <h3 class="location-heading">New York</h3>
-                                <div class="location-date">Fri 27 Nov 2016</div>
-                                <div class="location-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <button class="js-buy-ticket btn">Buy Tickets</button>
+                        <div class="row">
+                            <div class="col col-3 location-item">
+                                <img src="/assets/img/location1.jpg" alt="New York" class="location-img">
+                                <div class="location-info">
+                                    <h3 class="location-heading">New York</h3>
+                                    <div class="location-date">Fri 27 Nov 2016</div>
+                                    <div class="location-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                    <button class="js-buy-ticket btn">Buy Tickets</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col col-3 location-item">
-                            <img src="/assets/img/location2.jpg" alt="Paris" class="location-img">
-                            <div class="location-info">
-                                <h3 class="location-heading">Paris</h3>
-                                <div class="location-date">Sat 28 Nov 2016</div>
-                                <div class="location-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <button class="js-buy-ticket btn">Buy Tickets</button>
+                            <div class="col col-3 location-item">
+                                <img src="/assets/img/location2.jpg" alt="Paris" class="location-img">
+                                <div class="location-info">
+                                    <h3 class="location-heading">Paris</h3>
+                                    <div class="location-date">Sat 28 Nov 2016</div>
+                                    <div class="location-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                    <button class="js-buy-ticket btn">Buy Tickets</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col col-3 location-item">
-                            <img src="/assets/img/location3.jpg" alt="San Francisco" class="location-img">
-                            <div class="location-info">
-                                <h3 class="location-heading">San Francisco</h3>
-                                <div class="location-date">Sun 29 Nov 2016</div>
-                                <div class="location-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <button class="js-buy-ticket btn">Buy Tickets</button>
+                            <div class="col col-3 location-item">
+                                <img src="/assets/img/location3.jpg" alt="San Francisco" class="location-img">
+                                <div class="location-info">
+                                    <h3 class="location-heading">San Francisco</h3>
+                                    <div class="location-date">Sun 29 Nov 2016</div>
+                                    <div class="location-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                    <button class="js-buy-ticket btn">Buy Tickets</button>
+                                </div>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -187,6 +191,25 @@
         </div>
     </div>
     <script>
+        // Đóng mở menu
+        var header = document.getElementById('header')
+        var mobileMenu=document.getElementById('mobile-menu')
+        var headerHeight=header.clientHeight
+        mobileMenu.onclick=function(){
+            var isClosed = header.clientHeight==headerHeight;
+            if (isClosed){
+                header.style.height='auto'
+            }
+            else{
+                header.style.height=null;
+            }
+        }
+        var menuItems= document.querySelectorAll('#nav li a[href*="#"]')
+        for (menuItem of menuItems){
+            menuItem.addEventListener('click',function(){
+                header.style.height=null;
+            })
+        }
         const BuyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal=document.querySelector('.js-modal')
         const hideModal=document.querySelector('.js-modal-close')
