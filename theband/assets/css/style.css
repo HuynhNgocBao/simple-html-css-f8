@@ -176,7 +176,7 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url("/assets/img/slider1.jpg") no-repeat top center /cover;
+    background: url("../img/slider1.jpg") no-repeat top center /cover;
 }
 
 #slider .text-content{
@@ -193,6 +193,7 @@ html{
 #slider .text-description{
     margin-top: 25px;
     font-size: 15px;
+    text-shadow: 0 0 1px #000;
 }
 #content{
     font-size: 15px;
@@ -387,6 +388,7 @@ html{
 
 .modal-container{
     width: 900px;
+    /* max-width: 100%; */
     background-color: #fff;
     min-height: 200px;
     position: relative;
@@ -481,7 +483,7 @@ html{
 }
 
 /* Mobile */
-@media (max-width:740px){
+@media (max-width:739px){
     .s-mt-8{
         margin-top: 8px !important;
     }
@@ -517,6 +519,12 @@ html{
         top: 0;
         display: block;
     }
+    #slider .text-heading{
+        display: none;
+    }
+    #slider .text-description{
+        display: none;
+    }
     #content .member-img{
         width: 60%;
     }
@@ -547,5 +555,8 @@ html{
     }
     .contact-info{
         line-height: 2.1;
+    }
+    .modal-container{
+        margin: 0 16px;
     }
 }
