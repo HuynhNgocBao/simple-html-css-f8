@@ -176,9 +176,16 @@ html{
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
+}
+#slider.img1{
     background: url("../img/slider1.jpg") no-repeat top center /cover;
 }
-
+#slider.img2{
+    background: url("../img/slider2.jpg") no-repeat top center /cover;
+}
+#slider.img3{
+    background: url("../img/slider3.jpg") no-repeat top center /cover;
+}
 #slider .text-content{
     position: absolute;
     color: #fff;

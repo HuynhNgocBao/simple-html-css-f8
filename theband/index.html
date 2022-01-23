@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div id="slider">
+        <div id="slider" class="img1">"
             <div class="text-content">
                 <h2 class="text-heading">Chicago</h2>
                 <div class="text-description">Thank you, Chicago - A night we won't forget</div>
@@ -233,7 +233,33 @@
         modalContainer.addEventListener('click',function(event){
             event.stopPropagation()
         })
-        
+        // slider
+        var sliders = document.querySelector('#slider');
+        var textHeading = document.querySelector('#slider .text-heading');
+        var textDescription = document.querySelector('#slider .text-description');
+        var current = 1;
+        const sliderTexts = [
+                {
+                    textHeading: "Chicago",
+                    textDescription: "Thank you, Chicago - A night we won't forget"
+                },
+                {
+                    textHeading: "New York",
+                    textDescription: "The atmosphere in New York is lorem ipsum."
+                },
+                {
+                    textHeading: "Los Angeles",
+                    textDescription: "We had the best time playing at Venice Beach!"
+                }
+            ]
+        setInterval(function(){
+            let nextNumber = current % 3 + 1;
+            sliders.classList.add(`img${nextNumber}`);
+            textHeading.textContent = sliderTexts[nextNumber - 1].textHeading;
+            textDescription.textContent = sliderTexts[nextNumber - 1].textDescription;
+            sliders.classList.remove(`img${current}`);
+            current = nextNumber;
+        },3000);
     </script>
 </body>
 </html>
