@@ -12,25 +12,30 @@
     display: block;
 }
 .row{
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-left: -12px;
+    margin-right: -12px;
     display: flex;
     flex-wrap: wrap;
 }
 .column-2{
     padding-left: 12px;
     padding-right: 12px;
-    width: calc(1200px*16/100);
+    width: 16.66%;
 }
 .column-2-4{
     padding-left: 12px;
     padding-right: 12px;
-    width: calc(1200px/5);
+    width: 20%;
+}
+.column-2-of-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
 }
 .column-10{
     padding-left: 12px;
     padding-right: 12px;
-    max-width: 82%;
+    width: 83.33%;
 }
 html{
     font-size: 16px;
