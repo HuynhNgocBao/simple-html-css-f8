@@ -11,7 +11,9 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
+        <!-- navbar -->
         <div class="nav">
             <ul class="nav-list nav-list1">
                 <li class="nav-item"><a href="#">Kênh người bán</a></li>
@@ -55,10 +57,13 @@
                 <li class="nav-item signin"><a href="#">Đăng nhập</a></li>
             </ul>
         </div>
+        <!-- Phần còn lại của header -->
         <div class="header-bottom">
+            <!-- Logo -->
             <div class="logo-shopee">
                 <i class="fab fa-shopify"></i> Shopee
             </div>
+            <!-- Phần search và các link sản phẩm -->
             <div class="middle">
                 <div class="search">
                     <input type="text" class="search-input" placeholder="Lấy thêm mã free 0d">
@@ -76,6 +81,7 @@
                     <li class="product-item"><a href="#">Giày</a></li>
                 </ul>
             </div>
+            <!-- Giỏ hàng -->
             <i class="fas fa-shopping-cart icon-cart">
                 <div class="cart-number-product">
                     3
@@ -256,285 +262,295 @@
 
         </div>
     </header>
-
+    <!-- container -->
     <div class="container">
-        <div class="row">
-            <div class="column-2">
-                <nav class="category">
-                    <h3 class="category-heading"><i class="fas fa-list-ul"></i>Danh mục</h3>
-                    <ul class="category-list">
-                        <li><a href="" class="category-item active">Trang điểm mặt</a></li>
-                        <li><a href="" class="category-item">Trang điểm môi</a></li>
-                        <li><a href="" class="category-item">Trang điểm mắt</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="column-10">
-                <div class="filter">
-                    <span class="filter-label">Sắp xếp theo</span>
-                    <button class="filter-btn">Phổ biến</button>
-                    <button class="filter-btn filter-btn-primary">Mới nhất</button>
-                    <button class="filter-btn">Bán chạy</button>
-                    <div class="filter-select">
-                        <div class="filter-select-label">Giá <i class="fas fa-angle-down"></i>
-                            <div class="filter-sort">
-                                <div class="filter-sort-item">Từ thấp đến cao</div>
-                                <div class="filter-sort-item">Từ cao đến thấp</div>
+        <div class="grid">
+            <div class="row">
+                <!-- Category  -->
+                <div class="column-2">
+                    <nav class="category">
+                        <h3 class="category-heading"><i class="fas fa-list-ul"></i>Danh mục</h3>
+                        <ul class="category-list">
+                            <li><a href="" class="category-item active">Trang điểm mặt</a></li>
+                            <li><a href="" class="category-item">Trang điểm môi</a></li>
+                            <li><a href="" class="category-item">Trang điểm mắt</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Sắp xếp -->
+                <div class="column-10">
+                    <div class="filter">
+                        <span class="filter-label">Sắp xếp theo</span>
+                        <button class="filter-btn">Phổ biến</button>
+                        <button class="filter-btn filter-btn-primary">Mới nhất</button>
+                        <button class="filter-btn">Bán chạy</button>
+                        <div class="filter-select">
+                            <div class="filter-select-label">Giá <i class="fas fa-angle-down"></i>
+                                <div class="filter-sort">
+                                    <div class="filter-sort-item">Từ thấp đến cao</div>
+                                    <div class="filter-sort-item">Từ cao đến thấp</div>
+                                </div>
                             </div>
+    
                         </div>
-
                     </div>
+                    <!-- Sản phẩm  -->
+                    <div class="saleproduct">
+    
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column-2">
+                            <a href="" class="saleproduct-item">
+                                <div class="saleproduct-favorite">Yêu thích</div>
+                                <div class="saleproduct-saleoff">Giảm giá</div>
+                                <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
+                                    class="img-saleproduct">
+                                <div class="saleproduct-desc">
+                                    <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
+                                        Tạo Xinh Xắn</div>
+                                    <div class="saleproduct-price">
+                                        <div class="saleproduct-price old">1000000đ</div>
+                                        <div class="saleproduct-price new">500000đ</div>
+                                    </div>
+                                    <div class="saleproduct-star"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="page-list">
+                        <li><a href="" class="page-item">back</a>
+                        </li>
+                        <li><a href="" class="page-item page-item-active">1</a></li>
+                        <li><a href="" class="page-item">2</a></li>
+                        <li><a href="" class="page-item">3</a></li>
+                        <li><a href="" class="page-item">4</a></li>
+                        <li><a href="" class="page-item">...</a></li>
+                        <li><a href="" class="page-item">100</a></li>
+                        <li><a href="" class="page-item">go</a></li>
+                    </ul>
                 </div>
-                <div class="saleproduct">
-
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column-2">
-                        <a href="" class="saleproduct-item">
-                            <div class="saleproduct-favorite">Yêu thích</div>
-                            <div class="saleproduct-saleoff">Giảm giá</div>
-                            <img src="https://cf.shopee.vn/file/2c460848069d1e38a1d1cebb0059b338" alt=""
-                                class="img-saleproduct">
-                            <div class="saleproduct-desc">
-                                <div class="saleproduct-title">Phụ Kiện Trang Trí Móng Tay Hình Nơ Đính Ngọc Trai Nhân
-                                    Tạo Xinh Xắn</div>
-                                <div class="saleproduct-price">
-                                    <div class="saleproduct-price old">1000000đ</div>
-                                    <div class="saleproduct-price new">500000đ</div>
-                                </div>
-                                <div class="saleproduct-star"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <ul class="page-list">
-                    <li><a href="" class="page-item">back</a>
-                    </li>
-                    <li><a href="" class="page-item page-item-active">1</a></li>
-                    <li><a href="" class="page-item">2</a></li>
-                    <li><a href="" class="page-item">3</a></li>
-                    <li><a href="" class="page-item">4</a></li>
-                    <li><a href="" class="page-item">...</a></li>
-                    <li><a href="" class="page-item">100</a></li>
-                    <li><a href="" class="page-item">go</a></li>
-                </ul>
             </div>
         </div>
     </div>
+    <!-- Footer  -->
     <div class="footer">
-        <div class="row">
-            <div class="column-2-4">
-                <h4 class="footer-heading">Chăm sóc khách hàng</h4>
-                <ul class="footer-list">
-                    <li><a href="" class="footer-content">Trung tâm trợ giúp</a></li>
-                    <li><a href="" class="footer-content">TickidMail</a></li>
-                    <li><a href="" class="footer-content">Hướng dẫn mua hàng</a></li>
-                </ul>
-            </div>
-            <div class="column-2-4">
-                <h4 class="footer-heading">Về TickId</h4>
-                <ul class="footer-list">
-                    <li><a href="" class="footer-content">Giới thiệu</a></li>
-                    <li><a href="" class="footer-content">tuyển dụng</a></li>
-                    <li><a href="" class="footer-content">Điều khoản</a></li>
-                </ul>
-            </div>
-            <div class="column-2-4">
-                <h4 class="footer-heading">Chủ shop</h4>
-                <ul class="footer-list">
-                    <li><a href="" class="footer-content">Bảo</a></li>
-                    <li><a href="" class="footer-content">30/1/2022</a></li>
-                    <li><a href="" class="footer-content">Chủ nhật</a></li>
-                </ul>
-            </div>
-            <div class="column-2-4">
-                <h4 class="footer-heading">Theo dõi chúng tôi</h4>
-                <ul class="footer-list">
-                    <li><a href="" class="footer-content"><i class="fab fa-facebook-f footer-icon"></i>Facebook</a></li>
-                    <li><a href="" class="footer-content"><i class="fab fa-instagram footer-icon"></i>Instagram</a></li>
-                    <li><a href="" class="footer-content"><i class="fab fa-linkedin footer-icon"></i>Linkedin</a></li>
-                </ul>
-            </div>
-            <div class="column-2-4">
-                <h4 class="footer-heading">Vào ứng dụng trên cửa hàng tickid</h4>
-                <div class="footer-link-app">
-                    <div class="footer-qrcode"><img src="./assets/img/qrcode.png" alt="qrcode"></div>
-                    <div class="footer-app">
-                        <a href="" class="footer-download"><img src="./assets/img/googleplay.png" alt="googleplay"></a>
-                        <a href="" class="footer-download"><img src="./assets/img/appstore.png" alt="appstore"></a>
+        <div class="grid">
+            <div class="row">
+                <div class="column-2-4">
+                    <h4 class="footer-heading">Chăm sóc khách hàng</h4>
+                    <ul class="footer-list">
+                        <li><a href="" class="footer-content">Trung tâm trợ giúp</a></li>
+                        <li><a href="" class="footer-content">TickidMail</a></li>
+                        <li><a href="" class="footer-content">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <h4 class="footer-heading">Về TickId</h4>
+                    <ul class="footer-list">
+                        <li><a href="" class="footer-content">Giới thiệu</a></li>
+                        <li><a href="" class="footer-content">tuyển dụng</a></li>
+                        <li><a href="" class="footer-content">Điều khoản</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <h4 class="footer-heading">Chủ shop</h4>
+                    <ul class="footer-list">
+                        <li><a href="" class="footer-content">Bảo</a></li>
+                        <li><a href="" class="footer-content">30/1/2022</a></li>
+                        <li><a href="" class="footer-content">Chủ nhật</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <h4 class="footer-heading">Theo dõi chúng tôi</h4>
+                    <ul class="footer-list">
+                        <li><a href="" class="footer-content"><i class="fab fa-facebook-f footer-icon"></i>Facebook</a></li>
+                        <li><a href="" class="footer-content"><i class="fab fa-instagram footer-icon"></i>Instagram</a></li>
+                        <li><a href="" class="footer-content"><i class="fab fa-linkedin footer-icon"></i>Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="column-2-4">
+                    <h4 class="footer-heading">Vào ứng dụng trên cửa hàng tickid</h4>
+                    <div class="footer-link-app">
+                        <div class="footer-qrcode"><img src="./assets/img/qrcode.png" alt="qrcode"></div>
+                        <div class="footer-app">
+                            <a href="" class="footer-download"><img src="./assets/img/googleplay.png" alt="googleplay"></a>
+                            <a href="" class="footer-download"><img src="./assets/img/appstore.png" alt="appstore"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
+    <!-- Modal đăng ký -->
     <div class="modal-signup">
         <div class="modal-signup-container">
             <div class="modal-input-title">Đăng ký</div>
@@ -553,6 +569,7 @@
             </div>
         </div>
     </div>
+    <!-- Modal đăng nhập -->
     <div class="modal-signin">
         <div class="modal-signin-container">
             <div class="modal-input-title">Đăng Nhập</div>
