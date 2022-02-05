@@ -237,6 +237,7 @@ html{
 .header-bottom .search-input{
     width: calc(100% - 62px);
     height: 38px;
+    border: none;
 }
 .header-bottom .icon-search{
     min-width: 62px;
